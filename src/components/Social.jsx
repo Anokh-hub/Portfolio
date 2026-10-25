@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { SocialIcon } from 'react-social-icons';
+import { FaCode } from 'react-icons/fa';
 import { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 
@@ -16,28 +17,50 @@ function Social() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.social, {
-      method: 'GET',
-    })
+    fetch(endpoints.social)
       .then((res) => res.json())
       .then((res) => setData(res))
-      .catch((err) => err);
+      .catch(console.error);
   }, []);
 
   return (
     <div className="social">
-      {data ? data.social.map((social) => (
-        <SocialIcon
-          key={social.network}
-          style={styles.iconStyle}
-          url={social.href}
-          network={social.network}
-          bgColor={theme.socialIconBgColor}
-          fgColor={theme.background}
-          target="_blank"
-          rel="noopener"
-        />
-      )) : null}
+      {data?.social?.map((social) =>
+        social.network.toLowerCase() === 'codeforces' ? (
+          <a
+            key={social.network}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Codeforces"
+            style={{
+              ...styles.iconStyle,
+              display: 'inline-flex',
+              width: 40,
+              height: 40,
+              borderRadius: '50%',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: theme.socialIconBgColor,
+              color: theme.background,
+              textDecoration: 'none',
+            }}
+          >
+            <FaCode size={23} />
+          </a>
+        ) : (
+          <SocialIcon
+            key={social.network}
+            style={styles.iconStyle}
+            url={social.href}
+            network={social.network}
+            bgColor={theme.socialIconBgColor}
+            fgColor={theme.background}
+            target="_blank"
+            rel="noopener noreferrer"
+          />
+        )
+      )}
     </div>
   );
 }

@@ -1,19 +1,31 @@
 {
-    "education":[
+    "education": [
         {
-            "title": "Jun 20XX - Jun 20YY",
+            "title": "Jun 2024 - Jun 2028",
             "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
-            "icon" : {
-                "src": "images/education/lorem-ipsum.png"
+            "cardSubtitle": "Chaudhary Charan Shing University Meerut",
+            "cardDetailedText": "CGPA - 7.3",
+            "icon": {
+                "src": "images/education/CCSU-footer-logo.png"
             }
         },
         {
-            "title": "Apr 20XX",
+            "title": "2021 - 2023 | Passed in 2023",
+            "cardTitle": "Inter college",
+            "cardSubtitle": "Bapu inter college sadat , ghazipur",
+            "cardDetailedText": "Marks - 75.2%",
+            "icon": {
+                "src": "images/education/school.jpg"
+            }
+        },
+        {
+            "title": "2019 - 2021 | Passed in 2021",
             "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "cardSubtitle": "Bapu inter college sadat , ghazipur",
+            "cardDetailedText": "Marks - 81%",
+            "icon": {
+                "src": "images/education/school.jpg"
+            }
         }
     ]
 }

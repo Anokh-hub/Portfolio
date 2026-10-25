@@ -1,20 +1,24 @@
 {
     "social": [
         {
-            "network" : "linkedin",
-            "href": "https://linkedin.com/"
+            "network": "linkedin",
+            "href": "https://www.linkedin.com/in/anokh-prajapati/?isSelfProfile=true"
         },
         {
-            "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
+            "network": "github",
+            "href": "https://github.com/Anokh-hub"
         },
         {
-            "network" : "leetcode",
-            "href": "https://leetcode.com/"
+            "network": "leetcode",
+            "href": "https://leetcode.com/u/Anokhprajapati/"
         },
         {
-            "network" : "email",
-            "href": "mailto:test@test.com"
+            "network": "codeforces",
+            "href": "https://codeforces.com/profile/Anokh01"
+        },
+        {
+            "network": "email",
+            "href": "anokhprajapati850@gmail.com"
         }
     ]
 }
